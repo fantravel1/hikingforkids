@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hiking For Kids - Choose Your Language | Elige tu Idioma | Choisissez Votre Langue</title>
+  <meta name="description" content="Hiking For Kids - The world's #1 resource for kid-friendly hiking trails, skills, and safety. Available in English, Spanish, and French.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://hikingforkids.com/">
+  <link rel="alternate" hreflang="en" href="https://hikingforkids.com/en/">
+  <link rel="alternate" hreflang="es" href="https://hikingforkids.com/es/">
+  <link rel="alternate" hreflang="fr" href="https://hikingforkids.com/fr/">
+  <link rel="alternate" hreflang="x-default" href="https://hikingforkids.com/">
+  <meta property="og:title" content="Hiking For Kids - Global Kid-Friendly Trail Guide">
+  <meta property="og:description" content="Discover 500+ kid-friendly hiking trails across 45 countries. Safety-rated, age-appropriate adventures for the whole family.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hikingforkids.com/">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1551632811-561732d1e306?w=1200&q=80">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    html { font-size: 16px; }
+    body {
+      font-family: 'Nunito', 'Segoe UI', system-ui, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #1a5c2e 0%, #2d8a4e 30%, #1976d2 70%, #00897b 100%);
+      background-size: 400% 400%;
+      animation: gradientShift 15s ease infinite;
+      color: #fff;
+      padding: 2rem;
+      overflow: hidden;
+      position: relative;
+    }
+
+    @keyframes gradientShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    /* Floating nature elements */
+    body::before, body::after {
+      content: '';
+      position: fixed;
+      border-radius: 50%;
+      opacity: 0.08;
+      pointer-events: none;
+    }
+    body::before {
+      width: 600px; height: 600px;
+      background: white;
+      top: -200px; right: -200px;
+      animation: float1 20s ease-in-out infinite;
+    }
+    body::after {
+      width: 400px; height: 400px;
+      background: white;
+      bottom: -150px; left: -150px;
+      animation: float2 25s ease-in-out infinite;
+    }
+
+    @keyframes float1 {
+      0%, 100% { transform: translate(0, 0); }
+      50% { transform: translate(-40px, 40px); }
+    }
+    @keyframes float2 {
+      0%, 100% { transform: translate(0, 0); }
+      50% { transform: translate(30px, -30px); }
+    }
+
+    .selector {
+      text-align: center;
+      max-width: 720px;
+      width: 100%;
+      position: relative;
+      z-index: 1;
+    }
+
+    .selector__icon {
+      font-size: 4rem;
+      margin-bottom: 1rem;
+      display: block;
+      animation: bounce 2s ease infinite;
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    .selector__title {
+      font-family: 'Fredoka One', cursive;
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      margin-bottom: 0.5rem;
+      line-height: 1.1;
+      text-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    }
+
+    .selector__subtitle {
+      font-size: clamp(1rem, 2.5vw, 1.25rem);
+      opacity: 0.9;
+      margin-bottom: 2.5rem;
+      line-height: 1.6;
+      font-weight: 400;
+    }
+
+    .selector__grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .lang-card {
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+      padding: 1.5rem 2rem;
+      background: rgba(255,255,255,0.12);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(255,255,255,0.2);
+      border-radius: 16px;
+      text-decoration: none;
+      color: #fff;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .lang-card:hover {
+      background: rgba(255,255,255,0.22);
+      transform: translateY(-4px);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+      border-color: rgba(255,255,255,0.4);
+    }
+
+    .lang-card:active {
+      transform: translateY(-2px);
+    }
+
+    .lang-card__flag {
+      font-size: 2.5rem;
+      flex-shrink: 0;
+    }
+
+    .lang-card__info {
+      text-align: left;
+    }
+
+    .lang-card__name {
+      font-family: 'Fredoka One', cursive;
+      font-size: 1.35rem;
+      display: block;
+      margin-bottom: 2px;
+    }
+
+    .lang-card__native {
+      font-size: 0.9rem;
+      opacity: 0.8;
+    }
+
+    .lang-card__arrow {
+      margin-left: auto;
+      font-size: 1.5rem;
+      opacity: 0.6;
+      transition: all 0.3s ease;
+    }
+
+    .lang-card:hover .lang-card__arrow {
+      opacity: 1;
+      transform: translateX(4px);
+    }
+
+    .selector__footer {
+      font-size: 0.85rem;
+      opacity: 0.7;
+      margin-top: 1.5rem;
+      line-height: 1.5;
+    }
+
+    .selector__stats {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+      margin-bottom: 2.5rem;
+      opacity: 0.85;
+    }
+
+    .selector__stat {
+      text-align: center;
+    }
+
+    .selector__stat-number {
+      font-family: 'Fredoka One', cursive;
+      font-size: 1.5rem;
+      display: block;
+    }
+
+    .selector__stat-label {
+      font-size: 0.8rem;
+      opacity: 0.8;
+    }
+
+    @media (min-width: 640px) {
+      .selector__grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.25rem;
+      }
+
+      .lang-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem 1.5rem;
+      }
+
+      .lang-card__info {
+        text-align: center;
+      }
+
+      .lang-card__arrow {
+        margin-left: 0;
+      }
+
+      .lang-card:hover .lang-card__arrow {
+        transform: translateY(4px);
+      }
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Hiking For Kids",
+    "url": "https://hikingforkids.com",
+    "description": "The world's #1 resource for kid-friendly hiking trails, skills, and safety guides across 45 countries.",
+    "inLanguage": ["en", "es", "fr"],
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://hikingforkids.com/en/trails/?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+</head>
+<body>
+  <main class="selector" role="main">
+    <span class="selector__icon" aria-hidden="true">🥾</span>
+    <h1 class="selector__title">Hiking For Kids</h1>
+    <p class="selector__subtitle">
+      The world's guide to kid-friendly hiking adventures<br>
+      La guía mundial de senderismo para niños<br>
+      Le guide mondial de la randonnée pour enfants
+    </p>
+
+    <div class="selector__stats">
+      <div class="selector__stat">
+        <span class="selector__stat-number">500+</span>
+        <span class="selector__stat-label">Trails / Senderos / Sentiers</span>
+      </div>
+      <div class="selector__stat">
+        <span class="selector__stat-number">45</span>
+        <span class="selector__stat-label">Countries / Países / Pays</span>
+      </div>
+      <div class="selector__stat">
+        <span class="selector__stat-number">50K+</span>
+        <span class="selector__stat-label">Families / Familias / Familles</span>
+      </div>
+    </div>
+
+    <div class="selector__grid">
+      <a href="/en/" class="lang-card" aria-label="Continue in English">
+        <span class="lang-card__flag" aria-hidden="true">🇬🇧</span>
+        <div class="lang-card__info">
+          <span class="lang-card__name">English</span>
+          <span class="lang-card__native">Continue in English</span>
+        </div>
+        <span class="lang-card__arrow" aria-hidden="true">→</span>
+      </a>
+
+      <a href="/es/" class="lang-card" aria-label="Continuar en Español">
+        <span class="lang-card__flag" aria-hidden="true">🇪🇸</span>
+        <div class="lang-card__info">
+          <span class="lang-card__name">Español</span>
+          <span class="lang-card__native">Continuar en Español</span>
+        </div>
+        <span class="lang-card__arrow" aria-hidden="true">→</span>
+      </a>
+
+      <a href="/fr/" class="lang-card" aria-label="Continuer en Français">
+        <span class="lang-card__flag" aria-hidden="true">🇫🇷</span>
+        <div class="lang-card__info">
+          <span class="lang-card__name">Français</span>
+          <span class="lang-card__native">Continuer en Français</span>
+        </div>
+        <span class="lang-card__arrow" aria-hidden="true">→</span>
+      </a>
+    </div>
+
+    <p class="selector__footer">
+      &copy; 2026 Hiking For Kids. All rights reserved.<br>
+      Safe trails for every family, everywhere in the world.
+    </p>
+  </main>
+
+  <script>
+    // Auto-detect browser language and suggest redirect
+    (function() {
+      var lang = (navigator.language || navigator.userLanguage || 'en').toLowerCase();
+      var saved = null;
+      try { saved = localStorage.getItem('hfk-lang'); } catch(e) {}
+      if (saved) {
+        window.location.href = '/' + saved + '/';
+        return;
+      }
+      // Don't auto-redirect, let user choose, but highlight their likely language
+      var cards = document.querySelectorAll('.lang-card');
+      cards.forEach(function(card) {
+        card.addEventListener('click', function() {
+          var href = this.getAttribute('href');
+          var selectedLang = href.replace(/\//g, '');
+          try { localStorage.setItem('hfk-lang', selectedLang); } catch(e) {}
+        });
+      });
+      // Subtle highlight for detected language
+      if (lang.startsWith('es')) {
+        document.querySelector('a[href="/es/"]').style.borderColor = 'rgba(255,255,255,0.5)';
+        document.querySelector('a[href="/es/"]').style.background = 'rgba(255,255,255,0.18)';
+      } else if (lang.startsWith('fr')) {
+        document.querySelector('a[href="/fr/"]').style.borderColor = 'rgba(255,255,255,0.5)';
+        document.querySelector('a[href="/fr/"]').style.background = 'rgba(255,255,255,0.18)';
+      } else {
+        document.querySelector('a[href="/en/"]').style.borderColor = 'rgba(255,255,255,0.5)';
+        document.querySelector('a[href="/en/"]').style.background = 'rgba(255,255,255,0.18)';
+      }
+    })();
+  </script>
+</body>
+</html>

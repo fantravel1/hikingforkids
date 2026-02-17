@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- Root / Language Selector -->
+  <url>
+    <loc>https://hikingforkids.com/</loc>
+    <lastmod>2026-02-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hikingforkids.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hikingforkids.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hikingforkids.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hikingforkids.com/"/>
+  </url>
+
+  <!-- English Pages -->
+  <url>
+    <loc>https://hikingforkids.com/en/</loc>
+    <lastmod>2026-02-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hikingforkids.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hikingforkids.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hikingforkids.com/fr/"/>
+  </url>
+  <url>
+    <loc>https://hikingforkids.com/en/trails/</loc>
+    <lastmod>2026-02-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hikingforkids.com/en/trails/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hikingforkids.com/es/trails/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hikingforkids.com/fr/trails/"/>
+  </url>
+  <url>
+    <loc>https://hikingforkids.com/en/skills/</loc>
+    <lastmod>2026-02-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hikingforkids.com/en/skills/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hikingforkids.com/es/skills/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hikingforkids.com/fr/skills/"/>
+  </url>
+  <url>
+    <loc>https://hikingforkids.com/en/safety/</loc>
+    <lastmod>2026-02-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hikingforkids.com/en/safety/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hikingforkids.com/es/safety/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hikingforkids.com/fr/safety/"/>
+  </url>
+
+  <!-- Spanish Pages -->
+  <url>
+    <loc>https://hikingforkids.com/es/</loc>
+    <lastmod>2026-02-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hikingforkids.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hikingforkids.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hikingforkids.com/fr/"/>
+  </url>
+  <url>
+    <loc>https://hikingforkids.com/es/trails/</loc>
+    <lastmod>2026-02-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hikingforkids.com/en/trails/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hikingforkids.com/es/trails/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hikingforkids.com/fr/trails/"/>
+  </url>
+  <url>
+    <loc>https://hikingforkids.com/es/skills/</loc>
+    <lastmod>2026-02-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hikingforkids.com/en/skills/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hikingforkids.com/es/skills/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hikingforkids.com/fr/skills/"/>
+  </url>
+  <url>
+    <loc>https://hikingforkids.com/es/safety/</loc>
+    <lastmod>2026-02-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hikingforkids.com/en/safety/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hikingforkids.com/es/safety/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hikingforkids.com/fr/safety/"/>
+  </url>
+
+  <!-- French Pages -->
+  <url>
+    <loc>https://hikingforkids.com/fr/</loc>
+    <lastmod>2026-02-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hikingforkids.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hikingforkids.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hikingforkids.com/fr/"/>
+  </url>
+  <url>
+    <loc>https://hikingforkids.com/fr/trails/</loc>
+    <lastmod>2026-02-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hikingforkids.com/en/trails/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hikingforkids.com/es/trails/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hikingforkids.com/fr/trails/"/>
+  </url>
+  <url>
+    <loc>https://hikingforkids.com/fr/skills/</loc>
+    <lastmod>2026-02-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hikingforkids.com/en/skills/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hikingforkids.com/es/skills/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hikingforkids.com/fr/skills/"/>
+  </url>
+  <url>
+    <loc>https://hikingforkids.com/fr/safety/</loc>
+    <lastmod>2026-02-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hikingforkids.com/en/safety/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hikingforkids.com/es/safety/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hikingforkids.com/fr/safety/"/>
+  </url>
+
+</urlset>

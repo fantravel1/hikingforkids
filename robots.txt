@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://hikingforkids.com/sitemap.xml
+
+# Crawl-delay for polite bots
+Crawl-delay: 1

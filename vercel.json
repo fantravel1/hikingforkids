@@ -1,0 +1,125 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": true,
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        },
+        {
+          "key": "X-XSS-Protection",
+          "value": "1; mode=block"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "Permissions-Policy",
+          "value": "camera=(), microphone=(), geolocation=(self)"
+        }
+      ]
+    },
+    {
+      "source": "/css/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/js/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/(.*).html",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=0, must-revalidate"
+        }
+      ]
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/en/",
+      "destination": "/en/index.html"
+    },
+    {
+      "source": "/es/",
+      "destination": "/es/index.html"
+    },
+    {
+      "source": "/fr/",
+      "destination": "/fr/index.html"
+    },
+    {
+      "source": "/en/trails/",
+      "destination": "/en/trails/index.html"
+    },
+    {
+      "source": "/es/trails/",
+      "destination": "/es/trails/index.html"
+    },
+    {
+      "source": "/fr/trails/",
+      "destination": "/fr/trails/index.html"
+    },
+    {
+      "source": "/en/skills/",
+      "destination": "/en/skills/index.html"
+    },
+    {
+      "source": "/es/skills/",
+      "destination": "/es/skills/index.html"
+    },
+    {
+      "source": "/fr/skills/",
+      "destination": "/fr/skills/index.html"
+    },
+    {
+      "source": "/en/safety/",
+      "destination": "/en/safety/index.html"
+    },
+    {
+      "source": "/es/safety/",
+      "destination": "/es/safety/index.html"
+    },
+    {
+      "source": "/fr/safety/",
+      "destination": "/fr/safety/index.html"
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/trails/",
+      "destination": "/en/trails/",
+      "statusCode": 302
+    },
+    {
+      "source": "/skills/",
+      "destination": "/en/skills/",
+      "statusCode": 302
+    },
+    {
+      "source": "/safety/",
+      "destination": "/en/safety/",
+      "statusCode": 302
+    }
+  ]
+}
